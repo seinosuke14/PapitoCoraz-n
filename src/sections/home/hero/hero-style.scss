@@ -1,0 +1,22 @@
+@use "@/styles/tools/mixins" as *;
+@use "@/styles/tokens/color" as *;
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1{   
+        font-weight: bold;
+        font-size: x-large; 
+        text-align: center;  
+}
+.hero-content p {
+    font-weight: bolder;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 10px; 
+}

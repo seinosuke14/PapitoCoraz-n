@@ -1,0 +1,51 @@
+@use "@/styles/tokens/color" as *;
+
+
+.button{
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .9rem 1.2rem;
+  border-radius: .6rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+.primary {
+  background: $color-primary;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background: darken($color-primary, 8%);
+  }
+}
+
+.secondary {
+  background: transparent;
+  color: $color-primary;
+  border-color: rgba($color-primary, 0.25);
+
+  &:hover:not(:disabled) {
+    background: rgba($color-primary, 0.08);
+  }
+}
+
+.md {
+  font-size: 1rem;
+}
+
+.lg {
+  font-size: 1.125rem;
+  padding: 1rem 1.4rem;
+}
+
+.block {
+  width: 100%;
+}

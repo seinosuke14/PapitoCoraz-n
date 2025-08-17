@@ -1,0 +1,33 @@
+
+//breakpoints para responsive
+
+
+
+$breakpoints:(
+    xs: 480px,   // moviles pequeños
+    sm: 640px,   // Móviles grandes
+    md: 768px,   // Tablets
+    lg: 1024px,  // Laptops
+    xl: 1280px,  // Desktop grandes
+    xxl: 1536px  // Monitores muy grandes
+);
+
+//media query simplificado
+
+@mixin mq($size){
+    @media(min-width:map-get($breakpoints,$size)){
+        @content
+    }
+};
+//unicamente un responsive para tablets (poco usado)
+@mixin mq-tablet(){
+    @media(max-width:(map-get($breakpoints,lg)-1)) and (min-width:map-get($breakpoints,md)){
+        @content
+    }
+};
+//maximo tamañao
+@mixin mq-max($size){
+    @media (max-width:map-get($breakpoints,$size)){
+        @content
+    }
+}
