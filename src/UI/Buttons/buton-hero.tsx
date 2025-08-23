@@ -10,7 +10,7 @@ type Size = "md" | "lg";
 
 type Props = {
     children: React.ReactNode;
-    href?: string;              // si viene, renderiza <Link>
+    href?: string;             
   onClick?: () => void;
   variant?: Variant;
   size?: Size;
