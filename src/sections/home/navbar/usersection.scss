@@ -1,0 +1,28 @@
+.auth{
+    display: flex;
+    gap: 2em;
+    align-items: flex-end;
+    a{
+        text-decoration: none;
+        color: inherit;
+        &:hover{
+            color: rgb(71, 119, 65);
+        }
+    }
+}
+.button-user-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.user-info{display: flex;
+    gap: 2em;
+    a{
+        text-decoration: none;
+        color: inherit;
+        &:hover{
+            color: rgb(71, 119, 65);
+        }
+    }
+}
