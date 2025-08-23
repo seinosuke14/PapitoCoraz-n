@@ -1,20 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/globals.scss";
+import Navbar from "@/sections/home/navbar/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Papito Corazon",
   description: "Aplicacion web, enfocada en la informacion de pension de alimentos",
+  icons: {
+    icon: '/images/papitocorazonLogo.png',          // ← Favicon principal
+    apple: '/images/papitocorazonLogo.png',         // ← Para iOS
+    shortcut: '/images/papitocorazonLogo.png', 
+  }
 };
 
 export default function RootLayout({
@@ -25,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
+        <Navbar/>
         {children}
       </body>
     </html>
