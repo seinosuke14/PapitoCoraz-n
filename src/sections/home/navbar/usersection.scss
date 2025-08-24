@@ -26,3 +26,11 @@
         }
     }
 }
+
+.user-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%; // círculo
+  object-fit: cover;
+  margin-right: 8px;
+}
