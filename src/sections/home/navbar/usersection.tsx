@@ -114,7 +114,7 @@ export default function UserSection ({
 
       {/* Si tienes una página con formulario de email/password */}
       <Link href="/login" className="log-in-alt">
-        Iniciar sesión (Email)
+        Iniciar sesión
       </Link>
 
       {/* Corrijo el link: decía /logout pero el texto era "Registrar" */}

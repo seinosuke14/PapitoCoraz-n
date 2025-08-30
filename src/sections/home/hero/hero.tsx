@@ -9,8 +9,7 @@ import "./hero-style.scss";
     return (
         <section className="hero">
             <div className="hero-content">
-                <p>Aprende, calcula y gestiona tu pensión de alimentos.
-                    Herramientas y guías para cumplir responsablemente.</p>
+                <p>Aprende, calcula y gestiona tu pensión de alimentos. Herramientas y guías para cumplir responsablemente.</p>
             </div>
             <div className="hero-buttons">
                 <Button variant="primary" href="/calcular" >Calcular Pensión</Button>
