@@ -8,8 +8,8 @@ export default function Navbar(){
         <nav className='navbar-global'>
             <ul className='link-navigation'>
                 <li><Link href="/">Home</Link></li>
-                <li><Link href="/about">Sobre Nosotros</Link></li>
-                <li><Link href="/services">Servicios</Link></li>
+                <li><Link href="/aboutUs">Sobre Nosotros</Link></li>
+                <li><Link href="/servicios">Servicios</Link></li>
                 <li><Link href="/contact">Contactanos</Link></li>
              </ul>
 

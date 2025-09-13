@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   title: "Papito Corazon",
   description: "Aplicacion web, enfocada en la informacion de pension de alimentos",
   icons: {
-    icon: '/images/papitocorazonLogo.png',          // ← Favicon principal
-    apple: '/images/papitocorazonLogo.png',         // ← Para iOS
+    icon: '/images/papitocorazonLogo.png',         
+    apple: '/images/papitocorazonLogo.png',        
     shortcut: '/images/papitocorazonLogo.png', 
   }
 };

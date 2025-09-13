@@ -18,7 +18,7 @@ import "./hero-style.scss";
                         <h2>Aprende, calcula y gestiona tu pensión de alimentos. Herramientas y guías para cumplir responsablemente.</h2>
                         <div className="hero-buttons">
                         <Button variant="primary" href="/consultar">Consultar Deuda</Button>
-                        <Button variant="primary" href="/calcular">calcular Pensión</Button>
+                        <Button variant="primary" href="/calculatePension">calcular Pensión</Button>
                         </div>
                         
                     </div>

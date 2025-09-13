@@ -47,11 +47,11 @@ max-width: 1200px;
 .hero-text{
     display: flex;
     flex-direction: column;
-    position: absolute;                 /* <- se posiciona respecto a hero-left */
-  bottom: 8%;                         /* como en el ejemplo de referencia */
+    position: absolute;               
+  bottom: 8%;                         
   left: 5%;
   right: 6%;
-  z-index: 2;                         /* por encima del overlay */
+  z-index: 2;                         
   color: #fff;
   max-width: 640px;
   align-items: center;
