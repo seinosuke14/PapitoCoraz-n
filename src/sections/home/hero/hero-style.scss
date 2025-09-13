@@ -3,20 +3,91 @@
 
 .hero{
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-.hero-content h1{   
-        font-weight: bold;
-        font-size: x-large; 
-        text-align: center;  
+.hero-content-1{
+max-width: 1200px;
+  margin: 0;
+  padding: clamp(1rem, 1vw, 2rem);
 }
-.hero-content p {
-    font-weight: bolder;
+.hero-left{
+    border-radius: 16px;
+    overflow: hidden;
+    height: 650px;
+    width: 1200px;
+    position: relative;
+    isolation: isolate;
+    
+}
+.hero-left::after{
+  z-index: 1;
+    content: "";
+     position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.55) 0%,
+    rgba(0,0,0,0.20) 35%,
+    rgba(0,0,0,0.10) 100%
+  );
+  pointer-events: none;
+  
+}
+.hero-bg { object-fit: cover; object-position: center; z-index: 0;  }
+
+.logo-img1{
+    width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;  
+  
 }
 
-.hero-buttons{
+.hero-text{
     display: flex;
-    gap: 10px; 
+    flex-direction: column;
+    position: absolute;                 /* <- se posiciona respecto a hero-left */
+  bottom: 8%;                         /* como en el ejemplo de referencia */
+  left: 5%;
+  right: 6%;
+  z-index: 2;                         /* por encima del overlay */
+  color: #fff;
+  max-width: 640px;
+  align-items: center;
+
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.1;
+    font-weight: 800;
+    margin: 0 0 .5rem;
+  }
+  h2 {
+    font-size: clamp(1rem, 2.2vw, 1.125rem);
+    font-weight: 500;
+    opacity: .95;
+    margin: 0 0 1rem;
+  }
+  a, button {
+    /* asegúrate de tener foco visible en tu botón */
+    &:focus-visible { outline: 3px solid #39b; outline-offset: 2px; }
+  }
+  .hero-buttons{
+    display: flex;
+    gap: 2em;
+
+  }
+
 }
+.hero-info{
+    list-style: none;
+    font-size: x-large;
+    li{
+        padding: 10px;
+    }
+}
+
+
+
+
+
